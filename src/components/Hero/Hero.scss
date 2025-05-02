@@ -1,0 +1,142 @@
+.hero {
+  padding: 8rem 2rem 5rem;
+  background: linear-gradient(135deg, #1a237e 0%, #283593 100%);
+  color: #ffffff;
+  
+  &__container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    
+    @media (max-width: 992px) {
+      flex-direction: column;
+      text-align: center;
+    }
+  }
+  
+  &__content {
+    flex: 1;
+    max-width: 600px;
+    
+    @media (max-width: 992px) {
+      max-width: 100%;
+    }
+  }
+  
+  &__title {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    line-height: 1.2;
+    
+    @media (max-width: 768px) {
+      font-size: 2.5rem;
+    }
+    
+    @media (max-width: 576px) {
+      font-size: 2rem;
+    }
+  }
+  
+  &__subtitle {
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+    opacity: 0.9;
+    line-height: 1.6;
+  }
+  
+  &__features {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 2.5rem;
+    
+    @media (max-width: 992px) {
+      justify-content: center;
+    }
+  }
+  
+  &__feature {
+    display: flex;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 0.5rem 1rem;
+    border-radius: 50px;
+    
+    &-icon {
+      color: #ff5722;
+      margin-right: 0.5rem;
+    }
+  }
+  
+  &__cta {
+    display: flex;
+    gap: 1rem;
+    
+    @media (max-width: 992px) {
+      justify-content: center;
+    }
+    
+    @media (max-width: 576px) {
+      flex-direction: column;
+    }
+  }
+  
+  &__button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.75rem 1.5rem;
+    border-radius: 4px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    
+    &--primary {
+      background-color: #ff5722;
+      color: #ffffff;
+      
+      &:hover {
+        background-color: darken(#ff5722, 10%);
+      }
+    }
+    
+    &--secondary {
+      background-color: transparent;
+      color: #ffffff;
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      
+      svg {
+        margin-left: 0.5rem;
+        transition: transform 0.3s ease;
+      }
+      
+      &:hover {
+        background-color: rgba(255, 255, 255, 0.1);
+        
+        svg {
+          transform: translateX(3px);
+        }
+      }
+    }
+  }
+  
+  &__image {
+    flex: 1;
+    max-width: 500px;
+    
+    img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+    }
+    
+    @media (max-width: 992px) {
+      max-width: 100%;
+    }
+  }
+}

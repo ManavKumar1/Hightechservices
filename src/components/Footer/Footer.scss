@@ -1,0 +1,128 @@
+.footer {
+  background-color: #0d1440;
+  color: #ffffff;
+  padding: 4rem 0 1rem;
+  
+  &__container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+  }
+  
+  &__section {
+    margin-bottom: 2rem;
+  }
+  
+  &__logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    
+    &-icon {
+      margin-right: 0.5rem;
+      color: #ff5722;
+    }
+  }
+  
+  &__description {
+    color: #b0bec5;
+    line-height: 1.6;
+  }
+  
+  &__title {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+    position: relative;
+    padding-bottom: 0.5rem;
+    
+    &:after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 50px;
+      height: 2px;
+      background-color: #ff5722;
+    }
+  }
+  
+  &__links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    
+    li {
+      margin-bottom: 0.8rem;
+      
+      a {
+        color: #b0bec5;
+        text-decoration: none;
+        transition: color 0.3s ease;
+        
+        &:hover {
+          color: #ff5722;
+        }
+      }
+    }
+  }
+  
+  &__contact {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    
+    li {
+      display: flex;
+      align-items: center;
+      margin-bottom: 1rem;
+      color: #b0bec5;
+      
+      svg {
+        margin-right: 0.8rem;
+        color: #ff5722;
+      }
+    }
+  }
+  
+  &__social {
+    display: flex;
+    margin-top: 1.5rem;
+    
+    a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 36px;
+      height: 36px;
+      background-color: rgba(255, 255, 255, 0.1);
+      border-radius: 50%;
+      margin-right: 0.8rem;
+      color: #ffffff;
+      transition: all 0.3s ease;
+      
+      &:hover {
+        background-color: #ff5722;
+        transform: translateY(-3px);
+      }
+    }
+  }
+  
+  &__bottom {
+    text-align: center;
+    padding-top: 2rem;
+    margin-top: 2rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    
+    p {
+      color: #b0bec5;
+      font-size: 0.9rem;
+    }
+  }
+}
