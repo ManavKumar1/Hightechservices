@@ -17,7 +17,7 @@ const Footer = () => {
         <div className='footer__section'>
           <Link to='/' className='footer__logo'>
             <Tv className='footer__logo-icon' />
-            <span>HighTechServices</span>
+            <span>Hi-Tech Services</span>
           </Link>
           <p className='footer__description'>
             Professional TV repair services with over 15 years of experience. We

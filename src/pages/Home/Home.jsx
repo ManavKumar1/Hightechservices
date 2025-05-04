@@ -1,12 +1,17 @@
-import Hero from "../../components/Hero/Hero"
-import Services from "../../components/Services/Services"
-import Brands from "../../components/Brands/Brands"
-import Testimonials from "../../components/Testimonials/Testimonials"
-import Contact from "../../components/Contact/Contact"
-import "./Home.scss"
-import { ArrowRight, CheckCircle, Clock, PenToolIcon as Tools } from "lucide-react"
-import { Link } from "react-router-dom"
-
+import Hero from "../../components/Hero/Hero";
+import Services from "../../components/Services/Services";
+import Brands from "../../components/Brands/Brands";
+import Testimonials from "../../components/Testimonials/Testimonials";
+import Contact from "../../components/Contact/Contact";
+import "./Home.scss";
+import {
+  ArrowRight,
+  CheckCircle,
+  Clock,
+  PenToolIcon as Tools,
+} from "lucide-react";
+import { Link } from "react-router-dom";
+import readytofix from "../../assets/readytofix.avif";
 const Home = () => {
   return (
     <div className='home'>
@@ -100,7 +105,8 @@ const Home = () => {
           </div>
           <div className='home__cta-image'>
             <img
-              src='https://plus.unsplash.com/premium_photo-1723914092835-1d7a543f3243?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NjV8fG1vdGhlcmJvYXJkJTIwcmVwYWlyfGVufDB8fDB8fHww'
+              src={readytofix}
+              // src='https://plus.unsplash.com/premium_photo-1723914092835-1d7a543f3243?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NjV8fG1vdGhlcmJvYXJkJTIwcmVwYWlyfGVufDB8fDB8fHww'
               alt='TV Repair'
             />
           </div>
@@ -112,6 +118,6 @@ const Home = () => {
       <Contact />
     </div>
   );
-}
+};
 
-export default Home
+export default Home;

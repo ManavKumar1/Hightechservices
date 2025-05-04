@@ -1,6 +1,7 @@
 import "./About.scss";
 import { CheckCircle, Award, Users, Clock } from "lucide-react";
 import founder from "../../assets/founder.jpeg";
+import ourstory from "../../assets/ourstory.avif";
 const teamMembers = [
   {
     name: "Ranjit Panchal",
@@ -15,7 +16,7 @@ const About = () => {
     <div className='about'>
       <section className='about__hero'>
         <div className='about__hero-container'>
-          <h1 className='about__hero-title'>About HighTechServices</h1>
+          <h1 className='about__hero-title'>About Hi-Tech Services</h1>
           <p className='about__hero-subtitle'>
             Your trusted partner for professional TV repair services across
             India
@@ -28,7 +29,7 @@ const About = () => {
           <div className='about__story-content'>
             <h2 className='about__story-title'>Our Story</h2>
             <p className='about__story-text'>
-              HighTechServices was founded in 2005 in Pune with a mission to
+              Hi-Tech Services was founded in 2005 in Pune with a mission to
               provide affordable and reliable TV repair services across India.
               What started as a two-person operation has now expanded to major
               cities like Mumbai, Delhi, and Bangalore.
@@ -47,8 +48,9 @@ const About = () => {
           </div>
           <div className='about__story-image'>
             <img
-              src='https://images.unsplash.com/photo-1642229408339-572fa3328d10?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDEzMHx8fGVufDB8fHx8fA%3D%3D'
-              alt='HighTechServices workshop'
+              src={ourstory}
+              // src='https://images.unsplash.com/photo-1642229408339-572fa3328d10?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDEzMHx8fGVufDB8fHx8fA%3D%3D'
+              alt='Hi-Tech Services workshop'
             />
           </div>
         </div>

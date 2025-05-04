@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import "./Hero.scss";
 import { ArrowRight, CheckCircle } from "lucide-react";
-
+import heroimage from "../../assets/heroimage.avif";
 const Hero = () => {
   return (
     <section className='hero'>
@@ -40,7 +40,8 @@ const Hero = () => {
         </div>
         <div className='hero__image'>
           <img
-            src='https://images.unsplash.com/photo-1646821804389-9778ce2a4fd7?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
+            src={heroimage}
+            // src='https://images.unsplash.com/photo-1646821804389-9778ce2a4fd7?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
             alt='TV Repair Technician'
           />
         </div>
