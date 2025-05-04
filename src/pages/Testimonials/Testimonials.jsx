@@ -156,7 +156,7 @@ const TestimonialsPage = () => {
                 {(
                   testimonials.reduce((acc, curr) => acc + curr.rating, 0) /
                   testimonials.length
-                ).toFixed(1)}
+                ).toFixed(1)} ⭐️
               </div>
               <div className='testimonials-page__stat-label'>
                 Average Rating
