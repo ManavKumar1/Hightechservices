@@ -80,7 +80,7 @@ const Footer = () => {
             </li>
             <li>
               <MapPin size={18} />
-              <span>123 Repair Street, Tech City</span>
+              <span>Ajmer Rd, Jaipur, Rajasthan India</span>
             </li>
           </ul>
           <div className='footer__social'>

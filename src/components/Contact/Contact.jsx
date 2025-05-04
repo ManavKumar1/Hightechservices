@@ -91,7 +91,7 @@ const Contact = () => {
                 </div>
                 <div className='contact__info-content'>
                   <h4>Address</h4>
-                  <p>123 Repair Street, Tech City</p>
+                  <p>Ajmer Rd, Jaipur, Rajasthan India</p>
                 </div>
               </div>
 

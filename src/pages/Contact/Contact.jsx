@@ -23,11 +23,11 @@ const ContactPage = () => {
               </div>
               <h3 className='contact-page__info-title'>Our Location</h3>
               <p className='contact-page__info-text'>
-                123 Repair Street
+                Ajmer Rd,
                 <br />
-                Tech City, TC 12345
+                Jaipur, Rajasthan
                 <br />
-                United States
+                India
               </p>
             </div>
 
@@ -72,12 +72,16 @@ const ContactPage = () => {
         <div className='contact-page__map-container'>
           <h2 className='contact-page__map-title'>Find Us</h2>
           <div className='contact-page__map-frame'>
-            {/* Placeholder for map - in a real project, you would embed a Google Map or similar */}
-            <div className='contact-page__map-placeholder'>
-              <MapPin size={48} />
-              <p>Map Placeholder</p>
-              <p>123 Repair Street, Tech City, TC 12345</p>
-            </div>
+            <iframe
+              title='Ajmer Road Jaipur Location'
+              src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3559.085245176473!2d75.74462807545349!3d26.893809259538294!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396db40c4844f857%3A0x203e6505a9aaefe4!2sAjmer%20Rd%2C%20Jaipur%2C%20Rajasthan!5e0!3m2!1sen!2sin!4v1714729300481!5m2!1sen!2sin'
+              width='100%'
+              height='450'
+              style={{ border: 0 }}
+              allowFullScreen=''
+              loading='lazy'
+              referrerPolicy='no-referrer-when-downgrade'
+            ></iframe>
           </div>
         </div>
       </section>

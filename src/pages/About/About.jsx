@@ -1,30 +1,12 @@
 import "./About.scss";
 import { CheckCircle, Award, Users, Clock } from "lucide-react";
-
+import founder from "../../assets/founder.jpeg";
 const teamMembers = [
   {
-    name: "Ravi Mehra",
+    name: "Ranjit Panchal",
     position: "Founder & Lead Technician",
     bio: "With over 20 years of experience in TV and electronics repair, Ravi leads our team with unmatched technical knowledge and commitment to quality.",
-    image: "https://placehold.co/600x400/png",
-  },
-  {
-    name: "Anita Iyer",
-    position: "Smart TV Specialist",
-    bio: "Anita is certified by multiple leading TV brands and has 12+ years of experience in configuring and repairing Smart TVs.",
-    image: "https://placehold.co/600x400/png",
-  },
-  {
-    name: "Kunal Sharma",
-    position: "Electronics Technician",
-    bio: "Kunal specializes in chip-level diagnostics and PCB repairs, with a background in electrical engineering from IIT Delhi.",
-    image: "https://placehold.co/600x400/png",
-  },
-  {
-    name: "Pooja Deshmukh",
-    position: "Customer Service Manager",
-    bio: "Pooja ensures smooth coordination between technicians and customers, delivering a professional and friendly experience every time.",
-    image: "https://placehold.co/600x400/png",
+    // image: "https://placehold.co/600x400/png",
   },
 ];
 
@@ -142,7 +124,7 @@ const About = () => {
             {teamMembers.map((member, index) => (
               <div key={index} className='about__team-member'>
                 <div className='about__team-member-image'>
-                  <img src={member.image} alt={member.name} />
+                  <img src={founder} alt={member.name} />
                 </div>
                 <h3 className='about__team-member-name'>{member.name}</h3>
                 <p className='about__team-member-position'>{member.position}</p>
