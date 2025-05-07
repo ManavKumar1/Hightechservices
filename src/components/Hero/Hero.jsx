@@ -7,7 +7,7 @@ const Hero = () => {
     <section className='hero'>
       <div className='hero__container'>
         <div className='hero__content'>
-          <h1 className='hero__title'>Professional TV Repair Services</h1>
+          <h1 className='hero__title'>Professional TV/LED Repair Services</h1>
           <p className='hero__subtitle'>
             Expert repairs for all TV brands and models with same-day service
             available

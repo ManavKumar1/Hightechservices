@@ -6,7 +6,7 @@
   background-color: #1a237e;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   z-index: 1000;
-  
+
   &__container {
     display: flex;
     justify-content: space-between;
@@ -15,27 +15,29 @@
     max-width: 1200px;
     margin: 0 auto;
   }
-  
+
   &__logo {
     display: flex;
     align-items: center;
     text-decoration: none;
     color: #ffffff;
     font-weight: 700;
-    font-size: 1.5rem;
-    
+    font-size: 2rem;
+
     &-icon {
       margin-right: 0.5rem;
       color: #ff5722;
     }
   }
-  
+.navbar__logo-img{
+  height: 70px;
+}
   &__menu {
     display: flex;
     list-style: none;
     margin: 0;
     padding: 0;
-    
+
     @media (max-width: 768px) {
       position: fixed;
       flex-direction: column;
@@ -46,48 +48,48 @@
       left: -100%;
       transition: all 0.5s ease;
       padding: 2rem 0;
-      
+
       &.active {
         left: 0;
       }
     }
   }
-  
+
   &__item {
     margin: 0 0.5rem;
-    
+
     @media (max-width: 768px) {
       margin: 1rem 0;
       text-align: center;
     }
   }
-  
+
   &__link {
     color: #ffffff;
     text-decoration: none;
     padding: 0.5rem 1rem;
     border-radius: 4px;
     transition: all 0.3s ease;
-    
+
     &:hover {
       background-color: rgba(255, 255, 255, 0.1);
     }
-    
+
     &--cta {
       background-color: #ff5722;
       color: #ffffff;
-      
+
       &:hover {
         background-color: darken(#ff5722, 10%);
       }
     }
   }
-  
+
   &__toggle {
     display: none;
     cursor: pointer;
     color: #ffffff;
-    
+
     @media (max-width: 768px) {
       display: block;
     }

@@ -9,14 +9,16 @@ import {
   Twitter,
   Tv,
 } from "lucide-react";
-
+import logo from "../../assets/logo.png";
 const Footer = () => {
   return (
     <footer className='footer'>
       <div className='footer__container'>
         <div className='footer__section'>
           <Link to='/' className='footer__logo'>
-            <Tv className='footer__logo-icon' />
+            {/* <Tv className='footer__logo-icon' />
+             */}
+            <img src={logo} className='navbar__logo-img' alt='' />
             <span>Hi-Tech Services</span>
           </Link>
           <p className='footer__description'>
@@ -76,11 +78,17 @@ const Footer = () => {
             </li>
             <li>
               <Mail size={18} />
-              <span>info@hightechservices.com</span>
+              <span>
+                help.hitechservices <br />
+                @gmail.com
+              </span>
             </li>
             <li>
               <MapPin size={18} />
-              <span>Ajmer Rd, Jaipur, Rajasthan India</span>
+              <span>
+                Near Samurai Garden Purani <br />
+                Chungi Ajmer Rd, Jaipur, Rajasthan
+              </span>
             </li>
           </ul>
           <div className='footer__social'>

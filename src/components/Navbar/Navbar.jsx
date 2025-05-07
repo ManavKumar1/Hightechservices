@@ -16,7 +16,8 @@ const Navbar = () => {
     <nav className='navbar'>
       <div className='navbar__container'>
         <Link to='/' className='navbar__logo'>
-          <Tv className='navbar__logo-icon' />
+          {/* <Tv className='navbar__logo-icon' /> */}
+          <img src={logo} className='navbar__logo-img' alt='' />
           <span>Hi-Tech Services</span>
         </Link>
 

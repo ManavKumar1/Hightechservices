@@ -23,7 +23,7 @@ const ContactPage = () => {
               </div>
               <h3 className='contact-page__info-title'>Our Location</h3>
               <p className='contact-page__info-text'>
-                Ajmer Rd,
+                Near Samurai Garden Purani Chungi Ajmer Rd
                 <br />
                 Jaipur, Rajasthan
                 <br />
@@ -59,7 +59,7 @@ const ContactPage = () => {
               </div>
               <h3 className='contact-page__info-title'>Email</h3>
               <p className='contact-page__info-text'>
-                info@hightechservices.com
+                help.hitechservices@gmail.com
               </p>
             </div>
           </div>

@@ -81,7 +81,7 @@ const Contact = () => {
                 </div>
                 <div className='contact__info-content'>
                   <h4>Email</h4>
-                  <p>info@hightechservices.com</p>
+                  <p>help.hitechservices@gmail.com</p>
                 </div>
               </div>
 
@@ -91,7 +91,12 @@ const Contact = () => {
                 </div>
                 <div className='contact__info-content'>
                   <h4>Address</h4>
-                  <p>Ajmer Rd, Jaipur, Rajasthan India</p>
+                  <p>
+                    Near Samurai Garden Purani Chungi
+                    <br />
+                    Ajmer Rd, Jaipur,
+                    Rajasthan
+                  </p>
                 </div>
               </div>
 
