@@ -6,7 +6,7 @@ const teamMembers = [
   {
     name: "Ranjit Panchal",
     position: "Founder & Lead Technician",
-    bio: "With over 20 years of experience in TV and electronics repair, Ravi leads our team with unmatched technical knowledge and commitment to quality.",
+    bio: "With over 20 years of experience in TV and electronics repair, Ranjit leads our team with unmatched technical knowledge and commitment to quality.",
     // image: "https://placehold.co/600x400/png",
   },
 ];

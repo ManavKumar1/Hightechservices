@@ -1,12 +1,13 @@
 "use client";
 
-import React from "react";
-
-import { useState } from "react";
+import React, { useRef, useState } from "react";
 import "./Contact.scss";
 import { Phone, Mail, MapPin, Clock, Send } from "lucide-react";
+import emailjs from "@emailjs/browser";
 
 const Contact = () => {
+  const formRef = useRef();
+
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -18,32 +19,44 @@ const Contact = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitMessage, setSubmitMessage] = useState("");
 
-  const handleChange = () => {
+  const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData((prev) => ({ ...prev, [name]: value }));
   };
 
-  const handleSubmit = () => {
+  const handleSubmit = (e) => {
     e.preventDefault();
     setIsSubmitting(true);
 
-    // Simulate form submission
-    setTimeout(() => {
-      setIsSubmitting(false);
-      setSubmitMessage("Thank you! Your message has been sent successfully.");
-      setFormData({
-        name: "",
-        email: "",
-        phone: "",
-        subject: "",
-        message: "",
-      });
+    emailjs
+      .sendForm(
+        "service_9rd9yv3",
+        "template_h6cv8dk",
+        formRef.current,
+        "4-IMH60Z4tknGjSjp"
+      )
+      .then(
+        (result) => {
+          setIsSubmitting(false);
+          setSubmitMessage(
+            "Thank you! Your message has been sent successfully."
+          );
+          setFormData({
+            name: "",
+            email: "",
+            phone: "",
+            subject: "",
+            message: "",
+          });
 
-      // Clear success message after 5 seconds
-      setTimeout(() => {
-        setSubmitMessage("");
-      }, 5000);
-    }, 1500);
+          setTimeout(() => setSubmitMessage(""), 5000);
+        },
+        (error) => {
+          setIsSubmitting(false);
+          setSubmitMessage("Oops! Something went wrong. Please try again.");
+          console.error(error);
+        }
+      );
   };
 
   return (
@@ -71,7 +84,8 @@ const Contact = () => {
                 </div>
                 <div className='contact__info-content'>
                   <h4>Phone</h4>
-                  <p>+91-9799964120</p>
+                  {/* <p>+91-9799964120</p> */}
+                  <a href='tel:+919799964120'>+91-9799964120</a>
                 </div>
               </div>
 
@@ -81,7 +95,12 @@ const Contact = () => {
                 </div>
                 <div className='contact__info-content'>
                   <h4>Email</h4>
-                  <p>help.hitechservices@gmail.com</p>
+                  {/* <p>help.hitechservices@gmail.com</p> */}
+                  <p className='contact-page__info-text'>
+                    <a href='mailto:help.hitechservices@gmail.com'>
+                      help.hitechservices@gmail.com
+                    </a>
+                  </p>
                 </div>
               </div>
 
@@ -94,8 +113,7 @@ const Contact = () => {
                   <p>
                     Near Samurai Garden Purani Chungi
                     <br />
-                    Ajmer Rd, Jaipur,
-                    Rajasthan
+                    Ajmer Rd, Jaipur, Rajasthan
                   </p>
                 </div>
               </div>
@@ -114,7 +132,11 @@ const Contact = () => {
           </div>
 
           <div className='contact__form-container'>
-            <form className='contact__form' onSubmit={handleSubmit}>
+            <form
+              ref={formRef}
+              className='contact__form'
+              onSubmit={handleSubmit}
+            >
               <div className='contact__form-group'>
                 <label htmlFor='name'>Full Name</label>
                 <input
@@ -187,7 +209,7 @@ const Contact = () => {
                 className='contact__form-button'
                 disabled={isSubmitting}
               >
-                {isSubmitting ? "Sending..." : "Send Message"}
+                {isSubmitting ? "Sending..." : "Send Message"}{" "}
                 {!isSubmitting && <Send size={16} />}
               </button>
 

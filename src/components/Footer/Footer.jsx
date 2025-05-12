@@ -74,13 +74,19 @@ const Footer = () => {
           <ul className='footer__contact'>
             <li>
               <Phone size={18} />
-              <span>+91-9799964120</span>
+              {/* <span>+91-9799964120</span> */}
+              <a href='tel:+919799964120'>+91-9799964120</a>
             </li>
             <li>
               <Mail size={18} />
-              <span>
+              {/* <span>
                 help.hitechservices <br />
                 @gmail.com
+              </span> */}
+              <span>
+                <a href='mailto:help.hitechservices@gmail.com'>
+                  help.hitechservices <br /> @gmail.com
+                </a>
               </span>
             </li>
             <li>

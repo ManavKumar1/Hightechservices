@@ -50,7 +50,10 @@ const ContactPage = () => {
                 <Phone />
               </div>
               <h3 className='contact-page__info-title'>Phone</h3>
-              <p className='contact-page__info-text'>Main: +91-9799964120</p>
+              {/* <p className='contact-page__info-text'>Main: +91-9799964120</p> */}
+              <p className='contact-page__info-text'>
+                Main: <a href='tel:+919799964120'>+91-9799964120</a>
+              </p>
             </div>
 
             <div className='contact-page__info-card'>
@@ -58,8 +61,13 @@ const ContactPage = () => {
                 <Mail />
               </div>
               <h3 className='contact-page__info-title'>Email</h3>
-              <p className='contact-page__info-text'>
+              {/* <p className='contact-page__info-text'>
                 help.hitechservices@gmail.com
+              </p> */}
+              <p className='contact-page__info-text'>
+                <a href='mailto:help.hitechservices@gmail.com'>
+                  help.hitechservices@gmail.com
+                </a>
               </p>
             </div>
           </div>
